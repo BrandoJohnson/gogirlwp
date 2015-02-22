@@ -5,7 +5,7 @@
         <h1 class="title col-full"><?php the_title(); ?></h1>
     </div>
 
-    <p>xxxxx1234</p>
+    <p>xxxxx12345</p>
     <div id="content" class="page col-full">
 
         <div id="main" class="col-left">
