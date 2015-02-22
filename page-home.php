@@ -6,7 +6,6 @@
     </div>
 
     <p>xxxxx123</p>
-
     <div id="content" class="page col-full">
 
         <div id="main" class="col-left">
