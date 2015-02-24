@@ -40,7 +40,6 @@
                 </div><!-- /.post -->
             <?php endif; ?>
 
-
             <div class="contentBlock">
 
                 <div class="hp-contentColumn float-left">
