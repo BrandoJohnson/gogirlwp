@@ -28,7 +28,7 @@ if ( isset( $woo_options['woo_home_sidebar'] ) && $woo_options['woo_home_sidebar
                 <div class="float-left" style="width:170px;"><a href="what-is-gogirl.asp"><img src="<?php bloginfo('stylesheet_directory'); ?>/img/goGirl_prodShot3_hp.png" alt="GoGirl Product" width="170" height="245" border="0" /></a></div>
                 <div class="txtBox_wIMG float-left">
                     <h1><a href="#">Ok, so what's a GoGirl?</a></h1>
-                    <p>Sxzximply put, GoGirl is the way to stand up to crowded, disgusting, distant or non-existent bathrooms. It's a female urination device (sometimes called a FUD) that allows you to pee while standing up. It's neat. It's discreet. It's hygienic. <a href="what-is-gogirl.asp">(more)</a></p>
+                    <p>Simply put, GoGirl is the way to stand up to crowded, disgusting, distant or non-existent bathrooms. It's a female urination device (sometimes called a FUD) that allows you to pee while standing up. It's neat. It's discreet. It's hygienic. <a href="what-is-gogirl.asp">(more)</a></p>
                 </div>
                 <div class="clear"></div>
             </div>
