@@ -66,7 +66,7 @@ if ( isset( $woo_options['woo_home_sidebar'] ) && $woo_options['woo_home_sidebar
                     <h2 class="section-title"><?php echo stripslashes( $featured_title ); ?></h2>
 
                     <?php
-                    query_posts( 'suppress_filters=0&catid=12&post_type=infobox&order=ASC&posts_per_page=' . $mini_features_number );
+                    query_posts( 'suppress_filters=0&post_type=infobox&order=ASC&posts_per_page=' . $mini_features_number );
                     if ( have_posts() ) { $count = 0; while ( have_posts() ) { the_post(); $count++;
 
                         $excerpt = stripslashes( get_post_meta( $post->ID, 'mini_excerpt', true ) );
@@ -115,7 +115,7 @@ if ( isset( $woo_options['woo_home_sidebar'] ) && $woo_options['woo_home_sidebar
                 ?>
                 <div id="portfolio" class="<?php echo $main_css_class; ?> section">
                     <h2 class="section-title"><?php echo stripslashes( $featured_title ); ?></h2>
-                    <?php query_posts( 'suppress_filters=true&post_type=portfolio&posts_per_page=' . $portfolio_number ); ?>
+                    <?php query_posts( 'suppress_filters=true&catid=12&post_type=portfolio&posts_per_page=' . $portfolio_number ); ?>
                     <?php
                     if ( have_posts() ) { $count = 0;
                         while ( have_posts() ) { the_post(); $count++;
