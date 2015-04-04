@@ -45,7 +45,7 @@ if ( isset( $woo_options['woo_home_sidebar'] ) && $woo_options['woo_home_sidebar
             <?php
 
             $paged = ( get_query_var( 'paged' ) ) ? get_query_var( 'paged' ) : 1;
-            query_posts( 'suppress_filters=0&catid=12&post_type=post&paged=' . $paged );
+            query_posts( 'suppress_filters=0&post_type=post&paged=' . $paged );
 
             if ( isset( $woo_options['woo_mini_features'] ) && $woo_options['woo_mini_features'] == 'true' ) {
 
@@ -66,7 +66,7 @@ if ( isset( $woo_options['woo_home_sidebar'] ) && $woo_options['woo_home_sidebar
                     <h2 class="section-title"><?php echo stripslashes( $featured_title ); ?></h2>
 
                     <?php
-                    query_posts( 'suppress_filters=0&post_type=infobox&order=ASC&posts_per_page=' . $mini_features_number );
+                    query_posts( 'suppress_filters=0&catid=12&post_type=infobox&order=ASC&posts_per_page=' . $mini_features_number );
                     if ( have_posts() ) { $count = 0; while ( have_posts() ) { the_post(); $count++;
 
                         $excerpt = stripslashes( get_post_meta( $post->ID, 'mini_excerpt', true ) );
