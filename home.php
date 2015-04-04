@@ -45,7 +45,7 @@ if ( isset( $woo_options['woo_home_sidebar'] ) && $woo_options['woo_home_sidebar
             <?php
 
             $paged = ( get_query_var( 'paged' ) ) ? get_query_var( 'paged' ) : 1;
-            query_posts( 'suppress_filters=0&post_type=post&paged=' . $paged );
+            query_posts( 'suppress_filters=0&cat=12&post_type=post&paged=' . $paged );
 
             if ( isset( $woo_options['woo_mini_features'] ) && $woo_options['woo_mini_features'] == 'true' ) {
 
