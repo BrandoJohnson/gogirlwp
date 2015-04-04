@@ -180,7 +180,7 @@ if ( isset( $woo_options['woo_home_sidebar'] ) && $woo_options['woo_home_sidebar
             /* End Testimonials Section */
 
             if ( is_woocommerce_activated() && $woo_options[ 'woo_homepage_featured_products' ] == "true" ) {
-                echo '<h2 class="section-title">'.__('Featured Products', 'woothemes').'</h2>';
+                echo '<div class="section-title">'.__('Featured Products', 'woothemes').'</div>';
                 $featuredproductsperpage = $woo_options['woo_homepage_featured_products_perpage'];
                 echo do_shortcode('[featured_products per_page="'.$featuredproductsperpage.'" columns="3"]');
             }
