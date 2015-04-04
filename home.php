@@ -115,7 +115,7 @@ if ( isset( $woo_options['woo_home_sidebar'] ) && $woo_options['woo_home_sidebar
                 ?>
                 <div id="portfolio" class="<?php echo $main_css_class; ?> section">
                     <h2 class="section-title"><?php echo stripslashes( $featured_title ); ?></h2>
-                    <?php query_posts( 'suppress_filters=true&catid=12&post_type=portfolio&posts_per_page=' . $portfolio_number ); ?>
+                    <?php query_posts( 'suppress_filters=true&post_type=portfolio&posts_per_page=' . $portfolio_number ); ?>
                     <?php
                     if ( have_posts() ) { $count = 0;
                         while ( have_posts() ) { the_post(); $count++;
@@ -193,7 +193,7 @@ if ( isset( $woo_options['woo_home_sidebar'] ) && $woo_options['woo_home_sidebar
 
                     <?php if ( get_query_var( 'paged' ) ) { $paged = get_query_var( 'paged' ); } elseif ( get_query_var( 'page' ) ) { $paged = get_query_var( 'page' ); } else { $paged = 1; }
 
-                    query_posts( 'suppress_filters=0&post_type=post&paged=' . $paged );
+                    query_posts( 'suppress_filters=0&cat=12&post_type=post&paged=' . $paged );
 
                     if ( have_posts() ) { $count = 0; while ( have_posts() ) { the_post(); $count++;
                         ?>
