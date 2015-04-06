@@ -35,7 +35,7 @@
  padding: 50px 0px 40px 25px;
 }
 
-#parent_div_1, #parent_div_2 {
+#parent_div_1 {
  width:50%;
  height:100%;
  border:1px solid red;
